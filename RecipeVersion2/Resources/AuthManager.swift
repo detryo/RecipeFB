@@ -12,7 +12,7 @@ public class AuthManager {
     static let shared = AuthManager()
     
     // MARK: - Public
-    public func registerNewUser(userName: String, email: String, password: String, complition: @escaping(Bool) -> Void) {
+    public func registerNewUser(userName: String, email: String, password: String, complition: @escaping (Bool) -> Void) {
         
         // Check if user name is available
         DatabaseManager.shared.canCreateNewUser(with: email, userName: userName) { canCreate in
@@ -27,7 +27,7 @@ public class AuthManager {
                         return
                     }
                     // Insert Account to database
-                    DatabaseManager.shared.inserNewUser(with: email, userName: userName) { inserted in
+                    DatabaseManager.shared.insertNewUser(with: email, userName: userName) { inserted in
                         
                         if inserted {
                             complition(true)
@@ -52,9 +52,7 @@ public class AuthManager {
         if let email = email {
             // email log in
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                
                 guard authResult != nil, error == nil else {
-                    
                     complition(false)
                     return
                 }
@@ -65,9 +63,8 @@ public class AuthManager {
             print(userName)
         }
     }
-    
     // Attempt to Log Out Firebase User
-    public func logOut(complition: (Bool) -> Void ) {
+    public func logOut(complition: (Bool) -> Void) {
         
         do {
             
@@ -76,6 +73,7 @@ public class AuthManager {
             return
             
         } catch {
+            
             debugPrint(error.localizedDescription)
             complition(false)
             return

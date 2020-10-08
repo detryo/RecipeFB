@@ -20,6 +20,7 @@ public class StorageManager {
     // MARK: - Public
     public func uploadUserPost(model: UserPost, complition: @escaping (Result<URL, Error>) -> Void) {
         
+        
     }
     
     public func downloadImage(with reference: String, complition: @escaping (Result<URL, IGStorageManagerError>) -> Void) {

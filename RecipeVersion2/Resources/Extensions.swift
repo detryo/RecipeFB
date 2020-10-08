@@ -22,7 +22,7 @@ extension UIView {
     }
     
     public var bottom: CGFloat {
-        return frame.origin.y + height
+        return frame.origin.y + frame.size.height
     }
     
     public var left: CGFloat {
@@ -30,7 +30,7 @@ extension UIView {
     }
     
     public var right: CGFloat {
-        return frame.origin.x + width
+        return frame.origin.x + frame.size.width
     }
 }
 
