@@ -185,11 +185,9 @@ class LoginVC: UIViewController {
             let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
                 simpleAlert(title: "", message: "Password Shoud be 8 Characters")
                 return
-                
         }
         
         // login functionallity
-        
         var userName: String?
         var email: String?
         

@@ -21,7 +21,7 @@ class HomeVC: UIViewController {
         
         handleNotAuthentication()
     }
-
+    // Esta funcion es para que nos salga el LoginVC como defecto
     private func handleNotAuthentication() {
         // Check Auth Status
         if Auth.auth().currentUser == nil {

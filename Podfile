@@ -14,5 +14,4 @@ target 'RecipeVersion2' do
    pod 'Firebase/Analytics'	 
    pod 'Firebase/Crashlytics'
    pod 'Firebase/Storage'
-
 end
