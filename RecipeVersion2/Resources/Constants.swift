@@ -22,4 +22,6 @@ struct AppImages {
 struct Identifier {
     
     static let photoCell = "PhotoCell"
+    static let profileInfoHeaderReusableView = "ProfileInfoHeaderReusableView"
+    static let profileTabReusableView = "ProfileTabReusableView"
 }
