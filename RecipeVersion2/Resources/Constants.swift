@@ -18,3 +18,8 @@ struct AppImages {
     static let logo = "Logo"
     static let emblem = "Emblem"
 }
+
+struct Identifier {
+    
+    static let photoCell = "PhotoCell"
+}

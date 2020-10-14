@@ -138,14 +138,14 @@ class RegisterVC: UIViewController {
                 
                 if registered {
                     // good to go
-                    
+                    let viewController = HomeVC()
+                    self.navigationController?.pushViewController(viewController, animated: true)
                 } else {
                     // failed
                     self.simpleAlert(title: "Error", message: "try again please")
                 }
             }
         }
-        dismiss(animated: true, completion: nil)
     }
 }
 

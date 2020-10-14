@@ -7,10 +7,17 @@
 
 import UIKit
 
-class ProfileVC: UIViewController {
+final class ProfileVC: UIViewController {
+    
+    private var collectionView: UICollectionView?
+    let layout = UICollectionViewFlowLayout()
+    
+    private var userPost = [UserPost]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
     }
     
