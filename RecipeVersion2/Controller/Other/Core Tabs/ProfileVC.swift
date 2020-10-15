@@ -137,13 +137,11 @@ extension ProfileVC: UICollectionViewDataSource, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         guard kind == UICollectionView.elementKindSectionHeader else {
-            
             // Footer
             return UICollectionReusableView()
         }
         
         if indexPath.section == 1 {
-            
             // tab header
             let tabControllHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                                     withReuseIdentifier: Identifier.profileTabReusableView,
@@ -169,7 +167,7 @@ extension ProfileVC: UICollectionViewDataSource, UICollectionViewDelegate, UICol
         return CGSize(width: collectionView.width, height: 50)
     }
 }
-
+// MARK: - Segues Header, Post, Followers, Following and Edit Profile
 extension ProfileVC: ProfileInfoHeaderReusableViewDelegate {
     
     func profileHeaderDidTapPostButton(_ header: ProfileInfoHeaderReusableView) {

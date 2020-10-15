@@ -5,6 +5,7 @@
 //  Created by Cristian Sedano Arenas on 01/10/2020.
 //
 
+// Este Controlador es de Followers y Followings
 import UIKit
 
 class ListVC: UIViewController {
@@ -24,6 +25,7 @@ class ListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .systemBackground
 
     }
     
