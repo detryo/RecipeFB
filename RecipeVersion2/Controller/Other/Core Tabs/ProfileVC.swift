@@ -184,7 +184,7 @@ extension ProfileVC: ProfileInfoHeaderReusableViewDelegate {
             
             mockData.append(UserRelationship(userName: "@Chris",
                                              name: "Chris",
-                                             type: x % 2 == 0 ? .following : .no_following))
+                                             type: x % 2 == 0 ? .following : .not_following))
         }
         
         let viewController = ListVC(data: mockData)
@@ -201,7 +201,7 @@ extension ProfileVC: ProfileInfoHeaderReusableViewDelegate {
             
             mockData.append(UserRelationship(userName: "@Chris",
                                              name: "Chris",
-                                             type: x % 2 == 0 ? .following : .no_following))
+                                             type: x % 2 == 0 ? .following : .not_following))
         }
         
         let viewController = ListVC(data: mockData)

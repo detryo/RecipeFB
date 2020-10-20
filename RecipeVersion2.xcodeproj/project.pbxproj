@@ -205,9 +205,9 @@
 		369E008325262557001CAAD4 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				369E008425262560001CAAD4 /* Core Tabs */,
 				369E0086252625C1001CAAD4 /* General */,
 				369E008525262574001CAAD4 /* OnBordering */,
-				369E008425262560001CAAD4 /* Core Tabs */,
 			);
 			path = Other;
 			sourceTree = "<group>";

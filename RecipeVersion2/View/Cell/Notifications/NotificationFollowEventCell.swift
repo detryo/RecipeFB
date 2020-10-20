@@ -117,7 +117,7 @@ class NotificationFollowEventCell: UITableViewCell {
             // Show unFollow button
             configureForFollow()
                 
-            case .no_following:
+            case .not_following:
             // Show Follow button
                 followButton.setTitle("Follow", for: .normal)
                 followButton.setTitleColor(.white, for: .normal)

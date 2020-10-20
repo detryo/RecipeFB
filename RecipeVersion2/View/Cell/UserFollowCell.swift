@@ -10,7 +10,7 @@ import UIKit
 
 enum FollowState {
     
-    case following, no_following
+    case following, not_following
 }
 
 struct UserRelationship {
