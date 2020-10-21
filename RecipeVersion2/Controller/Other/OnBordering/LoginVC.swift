@@ -182,8 +182,8 @@ class LoginVC: UIViewController {
         userNameEmailField.resignFirstResponder()
         
         guard let userNameEmail = userNameEmailField.text, !userNameEmail.isEmpty,
-            let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
-                simpleAlert(title: "", message: "Password Shoud be 8 Characters")
+            let password = passwordField.text, !password.isEmpty, password.count >= 6 else {
+                simpleAlert(title: "", message: "Password Shoud be 6 Characters")
                 return
         }
         

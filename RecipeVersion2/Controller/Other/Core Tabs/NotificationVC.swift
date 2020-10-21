@@ -120,7 +120,7 @@ extension NotificationVC: UITableViewDataSource, UITableViewDelegate {
         
         return models.count
     }
-    
+    // Configurando las celdas de Like y Follow
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let model = models[indexPath.row]

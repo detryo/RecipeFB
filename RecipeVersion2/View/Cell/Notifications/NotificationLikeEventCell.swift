@@ -50,7 +50,7 @@ class NotificationLikeEventCell: UITableViewCell {
         contentView.addSubview(label)
         contentView.addSubview(postButton)
         
-        postButton.addTarget(self, action: #selector(didTappostButton), for: .touchUpInside)
+        postButton.addTarget(self, action: #selector(didTapPostButton), for: .touchUpInside)
         selectionStyle = .none
     }
     
@@ -91,7 +91,7 @@ class NotificationLikeEventCell: UITableViewCell {
         profileImageView.image = nil
     }
     
-    @objc private func didTappostButton() {
+    @objc private func didTapPostButton() {
         
         guard let model = model else { return }
         
