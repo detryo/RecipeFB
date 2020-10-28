@@ -182,8 +182,8 @@ extension ProfileVC: ProfileInfoHeaderReusableViewDelegate {
         
         for x in 0..<10 {
             
-            mockData.append(UserRelationship(userName: "@Chris",
-                                             name: "Chris",
+            mockData.append(UserRelationship(userName: "@Chris Followers",
+                                             name: "Chris Followers",
                                              type: x % 2 == 0 ? .following : .not_following))
         }
         
@@ -199,8 +199,8 @@ extension ProfileVC: ProfileInfoHeaderReusableViewDelegate {
         
         for x in 0..<10 {
             
-            mockData.append(UserRelationship(userName: "@Chris",
-                                             name: "Chris",
+            mockData.append(UserRelationship(userName: "@Chris Following",
+                                             name: "Chris Following",
                                              type: x % 2 == 0 ? .following : .not_following))
         }
         
