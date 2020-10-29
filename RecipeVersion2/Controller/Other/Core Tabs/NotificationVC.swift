@@ -84,7 +84,7 @@ final class NotificationVC: UIViewController {
 
     private func fetchNotifications() {
         
-        for x in 0...10 {
+        for x in 0...100 {
             
             let user = User(userName: "Chris",
                             bio: "",

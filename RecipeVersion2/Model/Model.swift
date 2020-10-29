@@ -25,7 +25,7 @@ public struct UserPost {
 public enum UserPostType: String {
     
     case photo = "Photo"
-    case vide = "Video"
+    case video = "Video"
 }
 
 struct PostLike {
